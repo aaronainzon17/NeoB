@@ -1,9 +1,7 @@
-/*Proyecto:     BibliUz
-//Fecha:        noviembre-2020
-//Autores:      Aarón Ibáñez Espés 779088, Pablo García García 781020, Arturo Calvera Tonin 776303
-//Módulo:       Front-end del sistema de información del proyecto BibliUZ
+/*Proyecto:     NeoB
+//Módulo:       Front-end del sistema de información del proyecto NeoB
 //Fichero:      notImplemented.js
-//Descripción:  Página notImplemented del front-end de BibliUz utilizada para delimitar 
+//Descripción:  Página notImplemented del front-end de NeoB utilizada para delimitar 
                 las fronteras del prototipo*/
 
 import React from 'react';

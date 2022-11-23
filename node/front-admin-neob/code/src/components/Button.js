@@ -1,9 +1,7 @@
-/*Proyecto:     BibliUz
-//Fecha:        noviembre-2020
-//Autores:      Aarón Ibáñez Espés 779088, Pablo García García 781020, Arturo Calvera Tonin 776303
-//Módulo:       Front-end del sistema de información del proyecto BibliUZ
+/*Proyecto:     NeoB
+//Módulo:       Front-end del sistema de información del proyecto NeoB
 //Fichero:      Button.js
-//Descripción:  Componente Button usado a lo largo del front-end de BibliUz*/
+//Descripción:  Componente Button usado a lo largo del front-end de NeoB*/
 
 import React from 'react';
 import './Button.css';
