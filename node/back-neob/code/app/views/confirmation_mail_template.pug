@@ -1,0 +1,19 @@
+//Proyecto:     NeoB
+//Fecha:        noviembre-2020
+//Autores:      Aarón Ibáñez Espés 779088, Pablo García García 781020, Arturo Calvera Tonin 776303
+//Módulo:       Back-end del sistema de información del proyecto NeoB
+//Fichero:      confirmation_mail_template.pug
+//Descripción:  Archivo para la definición de plantillas para los mails de confirmación de reserva realizada
+html
+    head
+        title Email de reserva
+        style 
+            include mail_template.css
+    body
+        div.mail
+            h1 Has realizado correctamente tu reserva, ¡Disfruta!, ¡Que nada te impida estudiar!
+            img(class="imgBiblio" src=imgBiblioteca alt=biblioteca)
+            p Por favor, si acabas de estudiar antes o decides no asistir, cancela la reserva.
+            a(class="a-btn--outline2" href=urlFinalizar+hashId) CANCELAR
+        div.footer
+            img(class="UZlogo" src="https://academico.unizar.es/sites/academico.unizar.es/files/archivos/becas/imagenes/logouz.png")

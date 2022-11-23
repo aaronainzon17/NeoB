@@ -1,0 +1,18 @@
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(1,2,77);
+    text-align: center;
+}
+
+.bloque {
+    text-align: left;
+    padding-right: 200px;
+    color: black;
+}
+
+.bocadillo{
+    color: rgb(1,2,77);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

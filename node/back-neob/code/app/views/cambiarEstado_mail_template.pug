@@ -1,0 +1,21 @@
+//Proyecto:     NeoB
+//Fecha:        noviembre-2020
+//Autores:      Aarón Ibáñez Espés 779088, Pablo García García 781020, Arturo Calvera Tonin 776303
+//Módulo:       Back-end del sistema de información del proyecto NeoB
+//Fichero:      reservation_mail_template.pug
+//Descripción:  Archivo para la definición de plantillas para los mails de confirmación de reserva*/
+html
+    head
+        title Tu asiento ha cambiado de estado
+        style 
+            include mail_template.css
+    body
+        div.mail
+            h1 Se ha cambiado el estado de tu asiento
+            img(class="imgBiblio" src=imgBiblioteca alt=biblioteca)
+            p Se ha cambiado el estado de la reserva de la fecha #{fecha} en la #{nombre}. 
+            p El asiento ha cambiado a estar: #{estado}.
+            p Por favor, si tienes algun inconveniente ponte en contacto con el administrador de la biblioteca.
+            p Gracias, el equipo de NeoB.
+        div.footer
+            img(class="UZlogo" src="https://academico.unizar.es/sites/academico.unizar.es/files/archivos/becas/imagenes/logouz.png")

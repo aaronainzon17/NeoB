@@ -1,0 +1,21 @@
+//Proyecto:     NeoB
+//Fecha:        noviembre-2020
+//Autores:      Aarón Ibáñez Espés 779088, Pablo García García 781020, Arturo Calvera Tonin 776303
+//Módulo:       Back-end del sistema de información del proyecto NeoB
+//Fichero:      positive_mail_template.pug
+//Descripción:  Archivo para la definición de plantillas para los mails de report de positivo por covid
+html
+    head
+        title Postivo COVID-19
+        style 
+            include mail_template.css
+    body
+        div.mail
+            img(class="imgBiblio" src=imgBiblioteca alt=biblioteca) 
+            h1 Alerta, posible contacto con positivo por Covid.
+            p Se ha reportado anonimamente un positivo en el aula: #{biblioteca} 
+            p Posibles contactos prolongados:
+            pre #{contactos}
+            p Por favor maneje esta información con discreción.
+        div.footer
+            img(class="UZlogo" src="https://academico.unizar.es/sites/academico.unizar.es/files/archivos/becas/imagenes/logouz.png")

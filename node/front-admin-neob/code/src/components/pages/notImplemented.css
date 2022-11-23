@@ -1,0 +1,15 @@
+
+.confirmar_body {
+    padding: 4rem;
+    background: #fff;
+    text-align: center;
+  }
+
+.confirmar_body > h1 {
+    text-align: center;
+}
+
+.check{
+  margin: 3rem;
+  margin: auto;
+}

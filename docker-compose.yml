@@ -1,0 +1,80 @@
+version: '3.9'
+services:
+  # Despliegue del contenedor de la base de datos 
+  neob_db:
+    image: postgres:14.5
+    restart: always
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=neob
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres:/docker-entrypoint-initdb.d/
+      - ./data:/var/lib/postgresql/data
+
+  # Despliegue del contenedor del backend
+  back_end:
+      build: ./node/back-neob/code
+      restart: always
+      environment:
+        - TZ=Europe/Madrid
+        - TIMEZONE=Europe/Madrid
+        - DB=neob_db
+        - DB_PORT=5432
+        - DB_USER=admin
+        - DB_PASSWORD=admin
+        - AUTH_SECRET=C0ntra5enya-s3creta-t0ken
+        - AUTH_TOKEN=auTh-Token-sTr726445
+        - MAIL_USER=neob.info
+        - MAIL_DOMAIN=@unizar.es
+        - MAIL_PASSWORD=NeoB_2022!
+        - CRYPTO_KEY=vOVH6sdmpNWjRRIqCc7rdxs01lwHzfr3
+        #- URL_BOTON_FINALIZAR=http://localhost:3398/finalizar/
+        #- URL_BOTON_CONFIRMAR=http://localhost:3398/confirmar/
+        #- URL_BOTON_NOCONFIRMAR=http://localhost:3398/noconfirmar/
+        - URL_BOTON_FINALIZAR=http://neob.unizar.es:3398/finalizar/
+        - URL_BOTON_CONFIRMAR=http://neob.unizar.es:3398/confirmar/
+        - URL_BOTON_NOCONFIRMAR=http://neob.unizar.es:3398/noconfirmar/
+
+      ports: 
+        - 8080:8080
+
+      depends_on:
+        - neob_db
+      
+  
+  #Despliegue del contenedor del frontend para usuarios
+  frontend_users:
+    build: ./node/front-users-neob/code
+    restart: always
+    environment:
+      - REACT_APP_BACKEND_IP=neobbackend.unizar.es
+      #- REACT_APP_BACKEND_IP=localhost
+      - REACT_APP_BACKEND_PORT=3400
+      - REACT_APP_HTTP_PROTOCOL=http
+      - REACT_APP_AUTH_TOKEN=auTh-Token-sTr726445
+      - REACT_APP_AUTH_SECRET=C0ntra5enya-s3creta-t0ken
+    ports: 
+      - 3001:3000
+    depends_on:
+      - back_end
+
+  # Desliegue del contenedor del frontend para administradores
+  frontend-admin:
+    build: ./node/front-admin-neob/code
+    restart: always
+    environment:
+      - TZ=Europe/Madrid
+      - TIMEZONE=Europe/Madrid
+      - REACT_APP_BACKEND_IP=neobbackend.unizar.es
+      #- REACT_APP_BACKEND_IP=localhost
+      - REACT_APP_BACKEND_PORT=3400
+      - BACK_PROTOCOL=http
+      - REACT_APP_AUTH_TOKEN=auTh-Token-sTr726445
+      - REACT_APP_AUTH_SECRET=C0ntra5enya-s3creta-t0ken
+    ports: 
+      - 3002:3000
+    depends_on:
+      - back_end

@@ -1,0 +1,9 @@
+
+.salas_body {
+    padding: 4rem;
+    background: #fff;
+  }
+
+.salas_body > h1 {
+    text-align: center;
+}

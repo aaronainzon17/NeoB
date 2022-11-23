@@ -1,0 +1,481 @@
+@import "../styles/_tools.respond_to.sass";
+
+.container {
+  margin: 314px 0 0;
+  padding: 0 10px 0;
+  background: #E7ECF5;
+  @include respond-to(small-down) {
+    margin-top: 20px;
+  }
+}
+
+.mesaXL {
+  height: 30px;
+  width: 270px;
+  background: url(../images/selectseat/mesa-xl.svg) 50% 50% no-repeat; 
+}
+
+.mesaL {
+  height: 30px;
+  width: 30px;
+  opacity: 0.4;
+  background: url(../images/selectseat/mesa-l.svg) 50% 50% no-repeat; 
+}
+
+.pasillo {
+  height: 16px;
+  width: 16px;
+}
+
+.espacio_mesa {
+  height: 8px;
+  width: 8px;
+}
+.enchufe {
+  height: 30px;
+  width: 30px;
+  background: url(../images/selectseat/enchufe_black.png) center center; 
+  background-size: cover;
+}
+
+.economy {
+  display: grid;
+  margin: auto;
+  width: fit-content;
+  box-shadow: 0px 0px 15px 0px rgba(16, 36, 94, 0.2);
+  grid-template-columns: repeat(9, 30px) 30px repeat(4, 30px);
+  grid-gap: 10px 5px;
+  padding: 40px 15px;
+}
+
+.tomasPollan {
+  display: grid;
+  margin: auto;
+  width: fit-content;
+  box-shadow: 0px 0px 15px 0px rgba(16, 36, 94, 0.2);
+  grid-template-columns: 655px;
+  row-gap: 10px;
+  padding: 40px 15px;
+}
+
+.tomasPollan_filaSillas{
+  display: grid;
+  grid-template-columns: repeat(9,30px) 60px repeat(8,30px);
+  column-gap: 5px;
+  grid-template-areas:
+   "f s s s s s s s s p s s s s s s s s"
+  ;
+}
+
+
+.tomasPollan_filaMesa {
+  display: grid;
+  grid-template-columns: 35px 275px 70px 275px;
+  grid-template-areas:
+   "e mesa pasillo mesa"
+  ;
+}
+
+.ada {
+  display: grid;
+  margin: auto;
+  width: fit-content;
+  box-shadow: 0px 0px 15px 0px rgba(16, 36, 94, 0.2);
+  grid-template-columns: 595px;
+  row-gap: 10px;
+  padding: 40px 15px;
+}
+
+.ada_filaMesa {
+  display: grid;
+  grid-template-columns: 35px 135px 70px 135px 70px 135px;
+  grid-template-areas:
+   "e mesa pasillo mesa pasillo mesa"
+  ;
+}
+
+.ada_filaSillas{
+  display: grid;
+  grid-template-columns: repeat(5,30px) 60px repeat(4,30px) 60px repeat(4,30px);
+  column-gap: 5px;
+  grid-template-areas:
+   "f s s s s p s s s s p s s s s"
+  ;
+}
+
+.ada_filaMesa2 {
+  display: grid;
+  grid-template-columns: 35px 135px 70px 65px;
+  grid-template-areas:
+   "e mesa pasillo mesa"
+  ;
+}
+
+.ada_filaSillas2{
+  display: grid;
+  grid-template-columns: repeat(5,30px) 60px repeat(2,30px);
+  column-gap: 5px;
+  grid-template-areas:
+   "f s s s s p s s"
+  ;
+}
+
+.ada_filaMesa3 {
+  display: grid;
+  grid-template-columns: 35px 205px;
+  grid-template-areas:
+   "e mesa"
+  ;
+}
+
+.ada_filaSillas3{
+  display: grid;
+  grid-template-columns: repeat(7,30px);
+  column-gap: 5px;
+  grid-template-areas:
+   "f s s s s s s"
+  ;
+}
+
+.hypatia {
+  display: grid;
+  margin: auto;
+  width: fit-content;
+  box-shadow: 0px 0px 15px 0px rgba(16, 36, 94, 0.2);
+  grid-template-columns: 1035px;
+  row-gap: 10px;
+  padding: 40px 15px;
+}
+
+.hypatia_filaSillas{
+  display: grid;
+  grid-template-columns: repeat(9,30px) 60px repeat(8,30px) 60px repeat(9,30px);
+  column-gap: 5px;
+  grid-template-areas:
+   "f s s s s s s s s p s s s s s s s s p s s s s s s s s f"
+  ;
+}
+
+
+.hypatia_filaMesa {
+  display: grid;
+  grid-template-columns: 35px 275px 70px 275px 70px 275px 35px;
+  grid-template-areas:
+   "e mesa pasillo mesa pasillo mesa e"
+  ;
+}
+
+.hypatia_filaMesa_enchufe {
+  display: grid;
+  grid-template-columns: 35px 275px 70px 275px 70px 275px 5px 30px;
+  grid-template-areas:
+   "e mesa pasillo mesa pasillo mesa e enchufe"
+  ;
+}
+
+
+.numFila {
+  margin: auto;
+}
+
+.mesaAda {
+  height: 30px;
+  width: 135px;
+  background: url(../images/selectseat/mesa-Ada.svg) 50% 50% no-repeat; 
+}
+.mesaAdaMini {
+  height: 30px;
+  width: 65px;
+  background: url(../images/selectseat/mesa-AdaMini.svg) 50% 50% no-repeat; 
+}
+.mesaAdaMax {
+  height: 30px;
+  width: 205px;
+  background: url(../images/selectseat/mesa-AdaMax.svg) 50% 50% no-repeat; 
+}
+
+.torres {
+  display: grid;
+  margin: auto;
+  width: fit-content;
+  box-shadow: 0px 0px 15px 0px rgba(16, 36, 94, 0.2);
+  grid-template-columns: 450px;
+  row-gap: 10px;
+  padding: 40px 15px;
+}
+
+.torres_filaMesa {
+  display: grid;
+  grid-template-columns: 35px 135px 135px 135px;
+  grid-template-areas:
+   "e mesa pasillo mesa"
+  ;
+}
+.torres_filaSillas{
+  display: grid;
+  grid-template-columns: repeat(5,30px) 125px repeat(4,30px);
+  column-gap: 5px;
+  grid-template-areas:
+   "f s s s s p s s s s"
+  ;
+}
+
+.mesaTorres {
+  height: 30px;
+  width: 140px;
+  background: url(../images/selectseat/mesa-torresQuevedo.svg) 50% 50% no-repeat; 
+}
+
+.mesaTomasPollan {
+  height: 30px;
+  width: 275px;
+  background: url(../images/selectseat/mesa-tomasPollan.svg) 50% 50% no-repeat; 
+}
+
+.mesaTomasPollanEnchufe {
+  height: 30px;
+  width: 275px;
+  background: url(../images/selectseat/mesa-tomasPollanEnchufe.png) 50% 50% no-repeat; 
+}
+
+.mesaHypatia {
+  height: 30px;
+  width: 275px;
+  background: url(../images/selectseat/mesa-tomasPollan.svg) 50% 50% no-repeat; 
+}
+
+
+// Estilos para Hemeroteca
+.hemeroteca {
+  display: grid;
+  margin: auto;
+  width: fit-content;
+  box-shadow: 0px 0px 15px 0px rgba(16, 36, 94, 0.2);
+  grid-template-columns: 595px;
+  //row-gap: 10px;
+  padding: 40px 15px;
+}
+
+.hemeroteca_filas{
+  display: grid;
+  grid-template-rows: 30px;
+  column-gap: 5px;
+  grid-template-areas:
+   "f"
+  ;
+}
+
+.hemeroteca_fila_sillas{
+  display: grid;
+  grid-template-columns: repeat(3,30px) 60px repeat(3,30px) 30px repeat(3,30px) 30px repeat(4,30px) 30px;
+  column-gap: 5px;
+  grid-template-areas:
+   "f m s p s m s e s m s e s m s e"
+  ;
+}
+
+.mesaVertical {
+  height: 35px;
+  width: 30px;
+  background: url(../images/selectseat/mesa_vertical.svg) 50% 50% no-repeat; 
+}
+
+.mesaVertical_bottom {
+  height: 35px;
+  width: 30px;
+  background: url(../images/selectseat/mesa_vertical_bottom.svg) 50% 50% no-repeat; 
+}
+
+.mesaVertical_top {
+  height: 35px;
+  width: 30px;
+  background: url(../images/selectseat/mesa_vertical_top.svg) 50% 50% no-repeat; 
+}
+
+.button {
+  -webkit-appearance: none;
+  border: 0 none;
+  background: url(../images/selectseat/seat/seat.svg) 50% 50% no-repeat;
+  display: block;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  position: relative;
+  z-index: 2;  
+}
+
+.button.sur {
+  -webkit-appearance: none;
+  border: 0 none;
+  background: url(../images/selectseat/seat/seat-sur.svg) 50% 50% no-repeat;
+  display: block;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  position: relative;
+  z-index: 2;  
+}
+
+.button.izquierda {
+  -webkit-appearance: none;
+  border: 0 none;
+  background: url(../images/selectseat/seat/seat_izq.svg) 50% 50% no-repeat;
+  display: block;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  position: relative;
+  z-index: 2;  
+}
+
+.button.derecha {
+  -webkit-appearance: none;
+  border: 0 none;
+  background: url(../images/selectseat/seat/seat_der.svg) 50% 50% no-repeat;
+  display: block;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  position: relative;
+  z-index: 2;  
+}
+
+button.button {
+  transition: ease-in-out 0.3s;
+}
+
+button.button:hover{
+  opacity: 0.5;
+  transition: ease-in-out 0.3s;
+  background: url(../images/selectseat/seat-active/seat_active.svg) 50% 50% no-repeat;
+}
+
+button.button.sur:hover{
+  opacity: 0.5;
+  transition: ease-in-out 0.3s;
+  background: url(../images/selectseat/seat-active/seat-sur_active.svg) 50% 50% no-repeat;
+}
+
+button.button.izquierda:hover{
+  opacity: 0.5;
+  transition: ease-in-out 0.3s;
+  background: url(../images/selectseat/seat-active/seat_izq-active.svg) 50% 50% no-repeat;
+}
+
+button.button.derecha:hover{
+  opacity: 0.5;
+  transition: ease-in-out 0.3s;
+  background: url(../images/selectseat/seat-active/seat_der-active.svg) 50% 50% no-repeat;
+}
+
+button.current {  
+  transition: ease-in-out 0.3s;
+  opacity: 1;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-active/seat_active.svg) 50% 50% no-repeat;
+}
+
+button.current.sur {  
+  transition: ease-in-out 0.3s;
+  opacity: 1;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-active/seat-sur_active.svg) 50% 50% no-repeat;
+}
+
+button.current.izquierda {  
+  transition: ease-in-out 0.3s;
+  opacity: 1;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-active/seat_izq-active.svg) 50% 50% no-repeat;
+}
+
+button.current.derecha {  
+  transition: ease-in-out 0.3s;
+  opacity: 1;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-active/seat_der-active.svg) 50% 50% no-repeat;
+}
+
+.button.unfair{
+  opacity: 0.4;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-dirty/seat_sucio.svg) 50% 50% no-repeat;
+}
+
+.button.unfair.sur{
+  opacity: 0.4;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-dirty/seat-sur_sucio.svg) 50% 50% no-repeat;
+}
+
+.button.unfair.izquierda{
+  opacity: 0.4;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-dirty/seat_izq-sucio.svg) 50% 50% no-repeat;
+}
+
+.button.unfair.derecha{
+  opacity: 0.4;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-dirty/seat_der-sucio.svg) 50% 50% no-repeat;
+}
+
+.button.busy{
+  opacity: 0.4;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-busy/seat_ocupado.svg) 50% 50% no-repeat;
+}
+
+.button.busy.sur{
+  opacity: 0.4;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-busy/seat-sur_ocupado.svg) 50% 50% no-repeat;
+}
+
+.button.busy.izquierda{
+  opacity: 0.4;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-busy/seat_izq-ocupado.svg) 50% 50% no-repeat;
+}
+
+.button.busy.derecha{
+  opacity: 0.4;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-busy/seat_der-ocupado.svg) 50% 50% no-repeat;
+}
+
+.button.scanned{
+  opacity: 0.4;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-scanned/seat-scanned.svg) 50% 50% no-repeat;
+}
+
+.button.scanned.sur{
+  opacity: 0.4;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-scanned/seat-sur-scanned.svg) 50% 50% no-repeat;
+}
+
+.button.scanned.izquierda{
+  opacity: 0.4;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-scanned/seat_izq-scanned.svg) 50% 50% no-repeat;
+}
+
+.button.scanned.derecha{
+  opacity: 0.4;
+  outline: 0 none;
+  background: url(../images/selectseat/seat-scanned/seat_der-scanned.svg) 50% 50% no-repeat;
+}
+
+.button_unavailable {
+  opacity: 0.4;
+}
+
+.button_unavailable.sur {
+  opacity: 0.4;
+}

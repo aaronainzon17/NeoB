@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.errorAsientoVacio
+{
+  color: red;
+}
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: rgb(1,2,77);
+  text-align: center;
+}
+
+
+/*.cabecera {
+  align-items: left;
+  justify-content: left;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.cabecera > h1 {
+  color: rgb(1,2,77);
+  text-align: center;
+  text-indent: 5rem;
+}
+
+.cabecera > h2 {
+  color: rgb(1,2,77);
+  text-align: left;
+  padding-top: 2rem;
+  text-indent: 2rem;
+}
+
+.cabecera > h3 {
+  color: rgb(1,2,77);
+  text-align: left;
+  padding-top: 2rem;
+  text-indent: 3rem;
+}
+
+.cabecera > h4 {
+  color: rgb(1,2,77);
+  text-align: left;
+  text-indent: 5rem;
+}
+
+.cabecera > p {
+  color:white;
+  justify-content: left;
+  font-size: 25px;
+  margin: 50px;
+}*/
+

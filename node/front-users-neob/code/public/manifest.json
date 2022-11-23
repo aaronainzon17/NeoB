@@ -1,0 +1,15 @@
+{
+  "short_name": "NeoB",
+  "name": "NeoB, no te quedes sin sitio",
+  "icons": [
+    {
+      "src": "image.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

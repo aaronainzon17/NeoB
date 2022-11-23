@@ -1,0 +1,42 @@
+{
+  "name": "back-bibliuz",
+  "version": "1.0.0",
+  "description": "Node.js Rest APIs with Express, Sequelize & PostgreSQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sequelize",
+    "postgresql",
+    "rest",
+    "api",
+    "bibliuz"
+  ],
+  "author": "Arturo Calvera Tonin, Pablo Garcia Garcia, Aaron Ibáñez Espés",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-pg-simple": "^6.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "generate-password": "^1.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemailer": "^6.8.0",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "pug": "^3.0.2",
+    "randomstring": "^1.1.5",
+    "sequelize": "^6.24.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  }
+}
