@@ -1,6 +1,4 @@
 /*Proyecto:     NeoB
-//Fecha:        noviembre-2020
-//Autores:      Aarón Ibáñez Espés 779088, Pablo García García, Arturo Calvera Tonin
 //Módulo:       Back-end del sistema de información del proyecto NeoB
 //Fichero:      server.js
 //Descripción:  Archivo para el arranque del servidor de back-end*/

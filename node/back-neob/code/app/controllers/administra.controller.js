@@ -1,6 +1,4 @@
 /*Proyecto:     NeoB
-//Fecha:        noviembre-2020
-//Autores:      Aarón Ibáñez Espés 779088, Pablo García García 781020, Arturo Calvera Tonin 776303
 //Módulo:       Back-end del sistema de información del proyecto NeoB
 //Fichero:      administra.controller.js
 //Descripción:  Archivo con funciones para el control y manejo de la tabla administra dentro de la BD */

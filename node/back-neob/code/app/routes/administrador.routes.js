@@ -1,6 +1,4 @@
 /*Proyecto:     NeoB
-//Fecha:        noviembre-2020
-//Autores:      Aarón Ibáñez Espés 779088, Pablo García García 781020, Arturo Calvera Tonin 776303
 //Módulo:       Back-end del sistema de información del proyecto NeoB
 //Fichero:      administrador.routes.js
 //Descripción:  Archivo para la definición de rutas para el acceso a las funciones del 
@@ -10,16 +8,6 @@
 const administrador = require("../controllers/administrador.controller.js");
 const router = require("express").Router();  
 
-
-/*
-// Retrieve administrador
-const adminfind = router.get("", administrador.FindAdministrador);
-// Retrieve all published administrador
-const adminfindA = router.get("", administrador.FindAllAdministrador);
-// Delete a administrador with id
-const admindel = router.delete("", administrador.DeleteAdministrador);
-
-module.exports = {adminfind,adminfindA,admindel}*/
 
 const { authJwt } = require("../middleware");
 module.exports = app => {
