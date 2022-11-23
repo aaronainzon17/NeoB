@@ -1,9 +1,7 @@
-/*Proyecto:     BibliUz
-//Fecha:        noviembre-2020
-//Autores:      Aarón Ibáñez Espés 779088, Pablo García García 781020, Arturo Calvera Tonin 776303
-//Módulo:       Front-end del sistema de información del proyecto BibliUZ
+/*Proyecto:     NeoB
+//Módulo:       Front-end del sistema de información del proyecto NeoB
 //Fichero:      Footer.js
-//Descripción:  Componente Footer usado a lo largo del front-end de BibliUz como pie de página*/
+//Descripción:  Componente Footer usado a lo largo del front-end de NeoB como pie de página*/
 
 
 import React from 'react';

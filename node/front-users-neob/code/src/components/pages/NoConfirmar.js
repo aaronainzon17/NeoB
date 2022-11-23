@@ -1,9 +1,7 @@
-/*Proyecto:     BibliUz
-//Fecha:        noviembre-2020
-//Autores:      Aarón Ibáñez Espés 779088, Pablo García García 781020, Arturo Calvera Tonin 776303
-//Módulo:       Front-end del sistema de información del proyecto BibliUZ
+/*Proyecto:     NeoB
+//Módulo:       Front-end del sistema de información del proyecto NeoB
 //Fichero:      NoConfirmar.js
-//Descripción:  Página NoConfirmar del front-end de BibliUz a la cual se accede desde un 
+//Descripción:  Página NoConfirmar del front-end de NeoB a la cual se accede desde un 
                 email de reserva para no confirmar un asiento reservado*/
 
 import React from 'react';

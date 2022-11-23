@@ -1,9 +1,7 @@
-/*Proyecto:     BibliUz
-//Fecha:        noviembre-2020
-//Autores:      Aarón Ibáñez Espés 779088, Pablo García García 781020, Arturo Calvera Tonin 776303
-//Módulo:       Front-end del sistema de información del proyecto BibliUZ
+/*Proyecto:     NeoB
+//Módulo:       Front-end del sistema de información del proyecto NeoB
 //Fichero:      HeroSection.js
-//Descripción:  Componente HeroSection usado en la parte superior de la página de Home de BibliUz*/
+//Descripción:  Componente HeroSection usado en la parte superior de la página de Home de NeoB*/
 
 import React from 'react';
 import '../App.css';
@@ -16,7 +14,7 @@ export default function HeroSection() {
   return (
     <div>
       <div className='hero-container'>
-        <video src='/videos/video_bibliUz.mp4' autoPlay loop muted />
+        <video src='/videos/video_NeoB.mp4' autoPlay loop muted />
         <h1>NeoB</h1>
         <p>Que nada te impida estudiar</p>
         <div className='hero-btns'>
